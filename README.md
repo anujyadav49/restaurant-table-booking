@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Restaurant Reservation System (MERN)
 
 A simple restaurant website where customers register, log in and book tables,
@@ -32,3 +33,6 @@ Default admin login (change it in `backend/.env` before running `npm run seed`):
 
 - Email: `admin@restaurant.com`
 - Password: `admin123`
+=======
+# restaurant-table-booking
+>>>>>>> ae87b094ea0f0d6488c8c834ad1697c57c11df47
