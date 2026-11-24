@@ -1,0 +1,121 @@
+:root {
+  --brand-dark: #2b1d16;
+  --brand-gold: #f0a500;
+  --brand-cream: #fff8ee;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--brand-cream);
+  color: #333;
+}
+
+h1, h2, h3, h4, .brand, .section-title {
+  font-family: "Playfair Display", serif;
+}
+
+/* ---------- Navbar ---------- */
+.app-navbar {
+  background-color: var(--brand-dark);
+}
+.app-navbar .brand {
+  font-size: 1.5rem;
+  color: var(--brand-gold);
+}
+.app-navbar .nav-link {
+  color: #f5e9d8;
+  margin: 0 0.25rem;
+}
+.app-navbar .nav-link:hover,
+.app-navbar .nav-link.active {
+  color: var(--brand-gold);
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  min-height: 85vh;
+  background:
+    linear-gradient(rgba(43, 29, 22, 0.65), rgba(43, 29, 22, 0.65)),
+    url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80")
+      center / cover no-repeat,
+    var(--brand-dark); /* fallback if the picture does not load */
+}
+
+/* ---------- Sections ---------- */
+.section-title {
+  color: var(--brand-dark);
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+.section-title::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background: var(--brand-gold);
+  margin: 0.6rem auto 0;
+}
+
+.highlight-card {
+  transition: transform 0.2s ease;
+}
+.highlight-card:hover {
+  transform: translateY(-6px);
+}
+.highlight-icon {
+  font-size: 3rem;
+}
+
+.details-section {
+  background-color: var(--brand-dark);
+  color: #f5e9d8;
+}
+.details-section h5 {
+  color: var(--brand-gold);
+}
+
+.about-image {
+  height: 340px;
+  border-radius: 1rem;
+  background:
+    url("https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=80")
+      center / cover no-repeat,
+    #c9a27a;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------- Pages ---------- */
+.page {
+  min-height: 70vh;
+}
+.auth-card {
+  max-width: 440px;
+}
+
+/* ---------- Footer ---------- */
+.app-footer {
+  background-color: var(--brand-dark);
+  color: #cdbba5;
+}
+
+/* ---------- Buttons ---------- */
+.btn-warning {
+  background-color: var(--brand-gold);
+  border-color: var(--brand-gold);
+  color: #2b1d16;
+}
+.btn-warning:hover {
+  background-color: #d89300;
+  border-color: #d89300;
+  color: #2b1d16;
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .about-image {
+    height: 220px;
+  }
+}
